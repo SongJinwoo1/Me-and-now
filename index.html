@@ -1,1 +1,57 @@
-yncb,
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard | لوحة التحكم</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body class="dash-body">
+    <aside class="sidebar">
+        <div class="logo">
+            <svg width="40" height="40" viewBox="0 0 100 100"><path d="M20 50 Q40 20 60 50 T100 50" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"/><circle cx="50" cy="70" r="8" fill="currentColor"/></svg>
+            <h2>Calm Dash</h2>
+        </div>
+        <div class="dr-profile">
+            <div class="avatar">د</div>
+            <p>د. أحمد المحترم</p>
+        </div>
+        <nav>
+            <a href="#" class="active">نظرة عامة</a>
+            <a href="#">المواعيد</a>
+            <a href="#">المرضى</a>
+            <a href="#" onclick="alert('سيتم ربط هذا الزر برابط موقع المرضى قريباً')">خروج للموقع</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <header class="dash-header">
+            <h3>الإحصائيات المباشرة</h3>
+            <div style="display: flex; gap: 15px; align-items: center;">
+                <button id="theme-toggle" class="btn-outline">الوضع الليلي</button>
+                <div class="notif">🔔<span class="dot"></span></div>
+            </div>
+        </header>
+
+        <section class="stats-grid">
+            <div class="stat-card glass"><h4>مواعيد اليوم</h4><p>15</p></div>
+            <div class="stat-card glass"><h4>إجمالي المرضى</h4><p>420</p></div>
+            <div class="stat-card glass"><h4>الإيرادات</h4><p>1,250 د.ك</p></div>
+            <div class="stat-card glass"><h4>معدل الرضا</h4><p>98%</p></div>
+        </section>
+
+        <section class="table-container glass">
+            <h4>المواعيد الأخيرة</h4>
+            <table>
+                <thead><tr><th>المريض</th><th>التاريخ</th><th>الخدمة</th><th>الحالة</th></tr></thead>
+                <tbody>
+                    <tr><td>سارة علي</td><td>2026-03-01</td><td>استشارة</td><td><span class="status">مؤكد</span></td></tr>
+                    <tr><td>محمد خالد</td><td>2026-03-02</td><td>متابعة</td><td><span class="status pending">انتظار</span></td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
