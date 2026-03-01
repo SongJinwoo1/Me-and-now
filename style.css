@@ -1,0 +1,5 @@
+:root { --bg: #f8f9fa; --text: #1a3c5a; --accent: #1a3c5a; --white: #fff; --trans: 0.4s; }
+[data-theme="dark"] { --bg: #0f172a; --text: #d4af37; --accent: #d4af37; }
+* { margin:0; padding:0; box-sizing:border-box; font-family: 'Cairo', sans-serif; }
+body { background: var(--bg); color: var(--text); transition: var(--trans); overflow-x: hidden; }
+.btn-outline { background: transparent; border: 2px solid var(--accent); color: var(--accent); padding: 8px 18px; border-radius: 8px; cursor: pointer; margin-right: 5px; }
