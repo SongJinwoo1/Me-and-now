@@ -1,0 +1,19 @@
+.dash-body { display: flex; min-height: 100vh; }
+.sidebar { width: 260px; background: var(--accent); color: var(--bg); padding: 30px 20px; display: flex; flex-direction: column; gap: 40px; }
+.dr-profile { text-align: center; }
+.avatar { width: 60px; height: 60px; background: var(--bg); color: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-weight: 700; }
+.sidebar nav a { display: block; color: var(--bg); text-decoration: none; padding: 12px; border-radius: 8px; transition: 0.3s; }
+.sidebar nav a.active, .sidebar nav a:hover { background: rgba(255,255,255,0.1); }
+
+.main-content { flex: 1; padding: 40px; background: var(--bg); }
+.dash-header { display: flex; justify-content: space-between; margin-bottom: 30px; }
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 40px; }
+.glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 25px; box-shadow: 0 8px 32px rgba(0,0,0,0.1); }
+[data-theme="light"] .glass { background: rgba(255,255,255,0.8); border: 1px solid rgba(0,0,0,0.05); }
+
+.stat-card h4 { font-size: 0.9rem; opacity: 0.8; }
+.stat-card p { font-size: 1.8rem; font-weight: 700; color: var(--accent); }
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { padding: 15px; text-align: right; border-bottom: 1px solid rgba(0,0,0,0.05); }
+.status { background: #d1fae5; color: #065f46; padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; }
+.status.pending { background: #fef3c7; color: #92400e; }
